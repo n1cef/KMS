@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CHOICE=$(kdialog --title "Select Domain" --radiolist "Choose a workflow:" \
+	  "Web" "Web Development" on \
+	    "Cyber" "Cybersecurity" off)
+
+if [ "$CHOICE" = "Web" ]; then
+	  /home/n1cef/activityswitcher.sh web
+  elif [ "$CHOICE" = "Cyber" ]; then
+	    /home/n1cef/activityswitcher.sh cyber
+    else
+	      kdialog --error "No domain selected!"
+fi
