@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Kraken Switcher
+Comment=Switch between scientific  domain
+Exec=/opt/KMS/./domain-selector.sh
+Icon=krakenswitcher
+Terminal=false
+Type=Application
+Categories=Utility;
